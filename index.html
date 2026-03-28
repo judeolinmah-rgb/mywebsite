@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jude Olinmah</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f7fa;
+            margin: 0;
+            color: #333;
+        }
+
+        header {
+            background: #0077ff;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        .sections-container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #0077ff;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        button {
+            margin: 10px 10px 0 0;
+            padding: 10px 15px;
+            border: none;
+            background: #0077ff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #005fcc;
+        }
+
+        .dark-mode {
+            background: #121212;
+            color: #f5f5f5;
+        }
+
+        .dark-mode section {
+            background: #1e1e1e;
+        }
+
+        .dark-mode h2 {
+            color: #66aaff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Jude Olinmah</h1>
+        <p>Current Pursuit Program L1 Fellow | Beginner Developer | Learning AI</p>
+    </header>
+
+    <div class="sections-container">
+
+        <!-- Who I Am -->
+        <section id="who-i-am">
+            <h2>Who I Am</h2>
+
+            <p>
+                Operations Expert specializing in global supply chain optimization — procurement, logistics, customer service, vendor coordination, inventory management, and cross-border leadership.
+            </p>
+
+            <p>
+                Proven track record in scaling an international office (WFOE), supporting ERP transitions (SAP Business One), and implementing data-driven systems that improve fulfillment speed. Strong background in sales support, event logistics, SOP development, and customer escalation management. Committed to driving operational excellence through a balance of strategic planning, hands-on leadership, and data-informed decision-making.
+            </p>
+        </section>
+
+        <!-- Education -->
+        <section id="education">
+            <h2>Education</h2>
+            <p>Mercy College, Dobbs Ferry, NY</p>
+            <p>B.S. Business Administration (Finance Concentration)</p>
+        </section>
+
+        <!-- Core Areas of Expertise -->
+        <section id="core-expertise">
+            <h2>Core Areas of Expertise</h2>
+            <ul>
+                <li>WOFE Establishment</li>
+                <li>Market Transition</li>
+                <li>Trade Compliance</li>
+                <li>End-to-End Logistics</li>
+                <li>Fulfillment Excellence</li>
+                <li>Inventory & Demand Planning</li>
+            </ul>
+        </section>
+
+        <!-- Technical Skills -->
+        <section id="technical-skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>SAP</li>
+                <li>AS400</li>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>Slack</li>
+            </ul>
+        </section>
+
+        <!-- Interests -->
+        <section id="interests">
+            <h2>Interests</h2>
+            <ul>
+                <li>Music</li>
+                <li>Travel</li>
+                <li>Tech News</li>
+                <li>Sports</li>
+            </ul>
+        </section>
+
+        <!-- LinkedIn -->
+        <section id="linkedin">
+            <h2>Connect With Me</h2>
+            <p>
+                <a href="https://www.linkedin.com/in/jude-olinmah-hsestrk4evr" target="_blank">
+                    View my LinkedIn Profile
+                </a>
+            </p>
+        </section>
+
+    </div>
+
+    <p id="greeting"></p>
+
+    <button onclick="toggleMode()">Toggle Dark Mode</button>
+
+    <script>
+        function toggleMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+
+        function showGreeting() {
+            const hour = new Date().getHours();
+            let greeting;
+
+            if (hour < 12) {
+                greeting = "Good Morning";
+            } else if (hour < 18) {
+                greeting = "Good Afternoon";
+            } else {
+                greeting = "Good Evening";
+            }
+
+            document.getElementById('greeting').textContent = `${greeting}, welcome to Jude's page!`;
+        }
+
+        showGreeting();
+    </script>
+
+</body>
+</html>
